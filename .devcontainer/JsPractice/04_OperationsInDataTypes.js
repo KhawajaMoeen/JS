@@ -86,9 +86,6 @@ console.log("decrement a = ",a);
 console.log("decrement b = ",b);
 
 
-
-
-
  //Pre Increment ++a
 
  let c = 14
