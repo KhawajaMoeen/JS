@@ -19,13 +19,14 @@ fruits.pop()
 // it will add a value at the start of your array which you pass as a parameter.
 
 fruits.unshift("dates")
-// console.log(fruits);
+console.log(fruits);
 
 // shift
 // it will remove the first value from your array.
 
-fruits.shift("dates")
-// console.log(fruits);
+let shiftFruits = fruits.shift()
+console.log(shiftFruits);
+console.log(fruits);
 
 // slice
 // for slice you have to create a new variable and store the operation in it, it will take numbers as parameters in it and returns the values from you array that are placed in that position numbers which you gave except the last, for eg. you pass parameters 0,3 so it will give output of value from 0-2 excluding value 3.
@@ -46,7 +47,7 @@ const someFruits = fruits.slice(0, 3)
 // this will convert your array into strings 
 
 const newFruits = fruits.join()
-console.log(newFruits);
+// console.log(newFruits);
 
 // concat
 // this will add anything you passes as parameters in it to your array.
@@ -66,5 +67,5 @@ const allFruits = [...fruits, ...myNewFruits]
 // in this if there is arrays inside array then this will make those into one main array.
 
 const myArr = [1, 2, 3, [4, 5], 6, 7, [8, 9, [0, 2]], 3]
-console.log(myArr.flat(2));
+// console.log(myArr.flat(2));
 
