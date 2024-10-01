@@ -27,12 +27,18 @@ myBio["email"] = "moeen@gmail.com"
 
 // Singleton Method to write Object
 
-const userInfo = new Object({
-    userName : "ali",
-    userId : 101234,
-    userEmail : "user@gmail.com",
-    isLoggedIn : true
-}
-)
-// console.log(userInfo["userEmail"]);
+const userInfo = new Object()
+
+userInfo.userName = "ali"
+userInfo.userId = 101234
+userInfo.userEmail = "user@gmail.com"
+userInfo.isLoggedIn = true
+
+// console.log(userInfo);
+// console.log(userInfo.hasOwnProperty("isLoggedIn"));
+
+console.log(Object.keys(userInfo));
+console.log(Object.values(userInfo));
+console.log(Object.enteries(userInfo));
+
 
