@@ -37,8 +37,9 @@ userInfo.isLoggedIn = true
 // console.log(userInfo);
 // console.log(userInfo.hasOwnProperty("isLoggedIn"));
 
-console.log(Object.keys(userInfo));
-console.log(Object.values(userInfo));
-console.log(Object.enteries(userInfo));
+// console.log(Object.keys(userInfo));
+// console.log(Object.values(userInfo));
+// console.log(Object.enteries(userInfo));
+
 
 
