@@ -17,29 +17,31 @@
 // const result = addTwoNumbers(4, 5)
 // console.log("result : ", result);
 
+
+// sending message to user
 function sendMessage(userName) {
    return `Hello ${userName}, welcome to our website`
 }
+// console.log(sendMessage("Moeen"))
 
-console.log(sendMessage("Moeen"))
 
+// returning shopping cart prices to user
 function shoppingCart(...price) {
     return price
 }
+// console.log(shoppingCart(100, 200, 400, 500));
 
-console.log(shoppingCart(100, 200, 400, 500));
 
+// calling object or keys/values that is coming from unknown user/info
 let user = {
     userName : "Ali",
     userId : 1001,
     accountPrice : 5000
 }
-
-// calling object or keys/values that is coming from unknown user/info
 function callingObject(anyObject) {
     return `The object, we are calling is: ${Object.keys(anyObject)} ${Object.values(anyObject)}`
 }
-console.log(callingObject(user))
+// console.log(callingObject(user))
 
 
 //adding an entity to object coming from random data
@@ -48,12 +50,34 @@ let entity ={userEmail : "user@gmail.com"}
 function addingEntityInObject(anyObject) {
     return Object.assign(anyObject , entity)
 }
-console.log(addingEntityInObject(user))
+// console.log(addingEntityInObject(user))
 
-let fruits = ["Apple", "Mango", "Banana"]
+
+let fruits = ["Apple", "Mango", "Banana", "orange" , "grapes"]
+
+// calling Array
+function returningArray(getArray){
+    return getArray
+}
+// console.log(fruits)
+
+
+// adding or removing values from array coming from random data 
 function callingArray(getArray){
-    let addFruits = getArray.push("dates");
-    return addFruits
+    getArray.push = "dates";
+    return getArray
 }
 
-console.log(callingArray(fruits))
+// console.log(callingArray(fruits))
+
+
+let itemsAmount = [220, 400, 2000, 5500, 500, 880]
+let temp = ""
+
+// adding amount of user total buying items
+function totalAmount(getArray) {
+    for(let i = 0; i <= getArray.length; i++){
+        return temp += i
+    }
+}
+console.log(totalAmount(itemsAmount))
