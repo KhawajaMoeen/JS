@@ -72,12 +72,20 @@ function callingArray(getArray){
 
 
 let itemsAmount = [220, 400, 2000, 5500, 500, 880]
-let temp = ""
+let sum = 0
+
+// for(let i = 0; i < itemsAmount.length; i++){
+//     sum += itemsAmount[i]
+// }
+// console.log(sum)
 
 // adding amount of user total buying items
 function totalAmount(getArray) {
-    for(let i = 0; i <= getArray.length; i++){
-        return temp += i
+    for(let i = 0; i < getArray.length; i++){
+        sum += getArray[i]
     }
+    return sum
 }
+
 console.log(totalAmount(itemsAmount))
+
